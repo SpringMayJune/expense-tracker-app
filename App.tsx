@@ -73,7 +73,12 @@ export default function App() {
           <Stack.Screen
             name="AddExpense"
             component={AddExpense}
-            options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
+            options={{
+              presentation: 'modal',
+              animation: 'slide_from_bottom',
+              headerStyle: { backgroundColor: GlobalStyles.colors.primary500 },
+              headerTintColor: 'white',
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
